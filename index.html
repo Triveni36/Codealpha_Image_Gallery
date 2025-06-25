@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="Stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Image Gallery</title>
+</head>
+<body>
+  <div id="Color">
+  <div class="container">
+    <h1 style="color: darkslategrey;font-family: cursive;background-color: pink;">Image Gallery</h1>
+
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <!-- Nature -->
+      <img src="Images/Image 2.jpg" class="nature" alt="Nature 1" onclick="openLightbox(this)">
+      <img src="Images/Image3.jpg" class="nature" alt="Nature 2" onclick="openLightbox(this)">
+      <img src="Images/nature3.jpg" class="nature" alt="Nature 3" onclick="openLightbox(this)">
+      <img src="Images/nature4.jpg" class="nature" alt="Nature 4" onclick="openLightbox(this)">
+      <img src="Images/nature5.jpg" class="nature" alt="Nature 5" onclick="openLightbox(this)">
+
+      
+      <!-- City -->
+      <img src="Images/imageCity1.jpg" class="city" alt="City 1" onclick="openLightbox(this)">
+      <img src="Images/imageCity2.jpg" class="city" alt="City 2" onclick="openLightbox(this)">
+      <img src="Images/city3.jpg" class="city" alt="City 3" onclick="openLightbox(this)">
+      <img src="Images/city4.jpg" class="city" alt="City 4" onclick="openLightbox(this)">
+      <img src="Images/city5.jpg" class="city" alt="City 5" onclick="openLightbox(this)">
+
+
+      <!-- Animals -->
+      <img src="Images/animal1.jpg" class="animals" alt="Animal 1" onclick="openLightbox(this)">
+      <img src="Images/animal2.jpg" class="animals" alt="Animal 2" onclick="openLightbox(this)">
+      <img src="Images/animal3.jpg" class="animals" alt="Animal 3" onclick="openLightbox(this)">
+      <img src="Images/animal4.jpg" class="animals" alt="Animal 4" onclick="openLightbox(this)">
+      <img src="Images/animal5.jpg" class="animals" alt="Animal 5" onclick="openLightbox(this)">
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+  </div>
+</body>
+</html>
+
